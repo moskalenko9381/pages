@@ -1,0 +1,13 @@
+https://big-task.ru
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> task </title>
+  </head>
+  <body>
+    <div align="left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </div>
+  </body>
+</html>

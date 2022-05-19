@@ -1,0 +1,13 @@
+https://vk.com
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Img Align Attribute</title>
+  </head>
+  <body>
+    <p>
+      This is an example. <img task="image.png" alt="Image" align="middle" /> More text right here
+      <img task="https://www.imgonline.com.ua/examples/bee-on-daisy.jpg" alt="Image" width="100" />
+    </p>
+  </body>
+</html>
