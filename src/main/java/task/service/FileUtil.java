@@ -17,8 +17,8 @@ public class FileUtil {
     private static final Logger logger = Logger.getLogger(FileUtil.class);
 
     public Map<String, String> makeMapFromPath(String directoryName) {
-        try (Stream<Path> pathStream = Files.walk(Paths.get(directoryName))){
-            return  pathStream
+        try (Stream<Path> pathStream = Files.walk(Paths.get(directoryName))) {
+            return pathStream
                     .filter(Files::isRegularFile)
                     .map(Path::toString)
                     .collect(Collectors.toMap(this::getUrl, this::readFile));
@@ -31,7 +31,7 @@ public class FileUtil {
     private String readFile(String name) {
         File file = new File(name);
         try (FileReader fr = new FileReader(file);
-            BufferedReader reader = new BufferedReader(fr)) {
+             BufferedReader reader = new BufferedReader(fr)) {
             String line = reader.readLine();
             StringBuilder res = new StringBuilder();
             while (line != null) {
@@ -47,7 +47,7 @@ public class FileUtil {
     private String getUrl(String name) {
         File file = new File(name);
         try (FileReader fr = new FileReader(file);
-            BufferedReader reader = new BufferedReader(fr)) {
+             BufferedReader reader = new BufferedReader(fr)) {
             return reader.readLine();
         } catch (IOException e) {
             return "";
