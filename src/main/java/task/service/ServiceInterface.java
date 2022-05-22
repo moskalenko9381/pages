@@ -1,5 +1,5 @@
 package task.service;
 
-public interface IService {
+public interface ServiceInterface {
     void process();
 }
